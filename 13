@@ -1,0 +1,10 @@
+using System;
+class convertor
+{
+    static void Main(string[] arg){
+    console.WriteLine("give meters");
+    double meter = convertor.ToDouble(console.readline());
+    double yard = meter / 0.9144;
+    console.WriteLine("{yard}");
+    }
+}

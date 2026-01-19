@@ -1,0 +1,11 @@
+using System;
+class convertor
+{
+    static void Main(string[] arg)
+    {
+        Console.WriteLine("Give cm");
+        double cm = convertor.ToDouble(Console.ReadLine());
+        double inch = cm / 2.54;
+        Console.WriteLine("{inch}");
+    }
+}
