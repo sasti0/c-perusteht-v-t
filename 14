@@ -1,0 +1,45 @@
+using System;
+class calc
+{
+    static void Main(string[] arg)
+    {
+        console.WriteLine("give first number");
+        double num1 = convert.ToDouble(console.readline());
+
+        console.WriteLine("give second number");
+        double num2 = convert.ToDouble(console.readline());
+
+        console.WriteLine("\nChoose:");
+        console.WriteLine("1. sum (a + b)");
+        console.WriteLine("2. take (a - b)");
+        console.WriteLine("3. (a * b)");
+        console.WriteLine("4. (a / b)");
+
+        console.WriteLine("Choose (1-4)");
+        int dec = Convert.ToInt32(Console.ReadLine());
+
+        switch (dec)
+        {
+            case 1:
+            console.WriteLine("{num1 + num2}");
+            break;
+            case 2:
+            console.WriteLine("{num1 - num2}");
+            break;
+            case 3:
+            console.WriteLine("{num1 * num2}");
+            break;
+            case 4:
+            if num2 != 0{
+            console.writeLine("{num1 / num2}");}
+                else
+                {
+                    console.writeLine("Error");
+                }
+            break;
+            default:
+            console.writeLine("Error");
+            break;
+        }
+    }
+}
