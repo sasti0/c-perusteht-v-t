@@ -1,0 +1,20 @@
+using System;
+class calculator
+{
+    static void main(string[] args)
+    {
+        console.writeLine("Suorakulmion pituus?");
+        double length = covert.ToDouble(console.readline());
+        console.writeLine("Suorakulmoin leveys?");
+        double width = covert.ToDouble(console.readline());
+        if (length >= 0) && (width >= 0)
+        {
+            double total = length * width;
+            console.writeLine($"Pinta-ala on {total}");
+        }
+        else
+        {
+            console.writeLine("error");
+        }
+    }
+}

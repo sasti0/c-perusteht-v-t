@@ -1,0 +1,23 @@
+using System;
+class calculator
+{
+    static void main(string[] args)
+    {
+        console.writeLine("Päivien määrä?");
+        int days = convert.ToInt32(console.readline());
+        if (days >= 0)
+        {
+            int years = days / 365;
+            int ddays = days % 365;
+            int months = ddays / 30;
+            int mmonths = ddays % 30;
+            console.writeLine($"päivät {days}");
+            console.writeLine($"kuukaudet {months}");
+            console.WriteLine($"vuodet {years}");
+        }
+        else
+        {
+            console.writeLine("error");
+        }
+    }
+}

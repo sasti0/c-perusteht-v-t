@@ -1,0 +1,18 @@
+usning System;
+class calculator
+{
+static void Main(string[] args)
+{
+    Console.writeLine("Neliön sivu?");
+    double sivu = covert.ToDouble(console.readline());
+    if (sivu >= 0)
+        {
+            double pintaAla = Math.Pow(sivu, 2);
+            console.writeLine($"Pinta-ala on {pintaAla:F2}");
+        }
+        else
+        {
+            console.write("error");
+        }
+}
+}
