@@ -1,0 +1,18 @@
+using system;
+class calculator
+{
+    static void main(string[] args)
+    {
+        console.writeLine("Ympyrän säde?");
+        double sade = covert.ToDouble(console.readline());
+        if (sade <= 0)
+        {
+            double pintaAla = math.Pi * math.Pow(2, sade);
+            console.writeLine($"pinta-ala on {pintaAla:F2}");
+        }
+        else
+        {
+            console.writeLine("error");
+        }
+    }
+}
